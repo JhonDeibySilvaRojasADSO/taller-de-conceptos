@@ -2,12 +2,32 @@ addEventListener("DOMContentLoaded", (e)=>{
     let formulario=document.querySelector("#formulario")
     formulario.addEventListener("submit",(e)=>{
         e.preventDefault();
-        let dato=Object.fromEntries( new FormData (e.target));
-        horas=dato.horas
-        tra=5208
-        respuesta.innerHTML=`su pago es de=  ${horas*tra}`
+        let datos=Object.fromEntries( new FormData (e.target));
+        N=Number(datos.N)
+    
+        i-1
+        while(i<numb){
+
             
+            if (numb%i==0){
+                
+                total=total+i
+                i=i+1
+            }
+            if (total==n){
+                
+                console.log('perfecto')
+            }
+            else {
+                console.log('no perfecto')
 
+                
+            } 
+            
+            respuesta.innerHTML=`su numero es =  ${total}`
+        }
+            
+            
     })
 
-    })
+})
